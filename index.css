@@ -1,7 +1,6 @@
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address,
  big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i,
  center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-  margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
@@ -19,14 +18,8 @@ body{
   margin: 0px;
 }
 
-*, *:before, *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 header {
-    display: block;
+  display: block;
 }
 
 p{
@@ -34,61 +27,162 @@ p{
   line-height: 1.6em;
 }
 
+a{
+  color: #000000;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
 .site-header{
 
   padding: 20px 20px 20px;
   margin-bottom: 20px;
   max-width: 1200px;
-  margin: 0 auto;
   padding: 0 20px;
   margin-bottom: 60px;
+  display: inline-flex;
+
 }
 
-.inner-header{
-
-  padding: 0 40px 20px;
-  border-bottom: 1px solid #E6E9ED;
-  display: flex;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
 
 .slide-out-menu-toggle {
 
   position: absolute;
   left: 20px;
-  top: 7px;
+  top: 6px;
   padding: 23px 20px 20px 20px;
   cursor: pointer;
   margin-left: -20px;
 }
 
 .site-header .site-branding {
-    display: block;
+  display: block;
 }
 
 .site-branding {
+  display: flex;
+  align-items: center;
+}
+
+.site-header .title-card{
+  text-align: left;
+}
+
+.title-card{
+
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.content-nav-bar{
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+  width: 50%;
+  display: inline-block;
+
+}
+
+.site-header .header-nav {
+    margin-left: auto;
     display: flex;
     align-items: center;
 }
 
-.site-header .title-card{
-    text-align: center;
+
+
+
+* {
+  box-sizing: border-box;
 }
 
-.title-card{
-    font-size: 20px;
-    font-weight: 400;
+/*****************************************************************************************************************************************/
+/* *** END:General Settings  *** */
+/*****************************************************************************************************************************************/
+
+
+/*****************************************************************************************************************************************/
+/* *** START:Navigation *** */
+/*****************************************************************************************************************************************/
+
+.navigation {
+  width: 100%;
+  height: 5rem;
+  background-color: #3d3f45;
+  font-weight: 400;
 }
 
-.fadeInDown {
-    -webkit-animation-name: fadeInDown;
-    animation-name: fadeInDown;
+.navigation > div {
+  display: inline-block;
+  position: relative;
 }
 
-.animated {
-    -webkit-animation-duration: .75s;
-    animation-duration: .75s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+
+/* *** START: Nav-Logo *** */
+nav div.nav-logo img {
+  height: 3rem;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left:2rem;
+}
+/* *** END: Nav-Logo *** */
+
+
+/* *** START: Nav-Center *** */
+nav .nav-center {
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+  width: 50%;
+}
+
+nav .nav-center > ul{
+    display: inline-block;
+}
+/* *** END: Nav-Center *** */
+
+
+/* *** START: Nav-End *** */
+div.nav-end {
+  float:right;
+  width:49%;
+}
+/* *** END: Nav-End *** */
+
+
+/* *** START: Nav-Items *** */
+div.nav-items ul {
+  height: 100%;
+  margin: 0;
+}
+
+div.nav-items ul li {
+  display: inline-block;
+  height:100%;
+  padding: 0 1rem;
+}
+
+div.nav-items a {
+  text-decoration: none;
+  vertical-align: middle;
+  line-height: 5rem;
+}
+
+div.nav-items a:link {
+  color:#fff;
+}
+
+div.nav-items a:visited {
+  color:#fff;
+}
+
+div.nav-items a:hover,
+div.nav-items a:active {
+  color:#e5e5e5;
+}
+
+.active {
+  background-color: #a62c21;
 }
