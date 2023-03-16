@@ -1,1 +1,189 @@
 
+.logo{
+  border-radius: 10px;
+  margin-top: -50px;
+  width:100%;
+  object-fit:cover;
+}
+a{
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+h2{
+  font-weight: normal;
+  word-spacing: 5px;
+}
+body{
+  font-family: "Ciutadella","Arial Narrow",sans-serif;
+  letter-spacing: 0.5px;
+  color: #fff;
+  background-color: #fff;
+  margin: 0px;
+}
+li{
+  list-style-type:none;
+  padding:0px;
+}
+.mainImage{
+  position: relative;
+  top: 0;
+  left: 0;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 70% 100%, 0% 100%);
+  width:100%;
+  height: 40%;
+  object-fit:cover;
+}
+.textBox{
+  position: absolute;
+  top: 350px;
+  left: 100px;
+  height: 250px;
+  width: 425px;
+}
+.textBoxContents{
+  position: absolute;
+  width: 385px;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow-wrap: break-word;
+  color:#fff;
+}
+.textBoxContents p{
+  font-size: 20px;
+}
+.showcase{
+  margin: 10px 30px 10px;
+  height: 830px;
+}
+.imageColumn1{
+  width:50%;
+  height: 800px;
+  float: left;
+}
+.imageColumn2{
+  width:50%;
+  height: 800px;
+  float: right;
+  margin-top: 0px;
+}
+.roundStyle{
+  border-radius: 30px;
+  margin-top: -50px;
+  width:100%;
+  height:350px;
+  object-fit:cover;
+}
+.titleCard{
+  width:100%;
+  text-align: center;
+  margin: auto;
+  max-width: 700px;
+  margin-bottom: 45px;
+}
+.titleButton{
+  border-style: solid;
+  border-radius: 0.35rem;
+  border-width: 4px;
+  border-color:#2796fd;
+  color:#2796fd;
+  width:300px;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #fff;
+  resize:horizontal;
+  margin:1px 0px 0px 20px;
+}
+.titleButton:hover{
+  border-style: solid;
+  border-radius: 0.35rem;
+  border-width: 4px;
+  border-color:#2796fd;
+  color:#fff;
+  background-color:#2796fd;
+}
+.international{
+  background-color:#f4f5f6;
+  padding-bottom: 5px;
+}
+.interShowHeading{
+  color:#000000;
+  padding: 5px 35px;
+  margin-bottom: -50px;
+  font-size: 22px;
+}
+.interShowHeading h3{
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: -10px;
+}
+.tileStyle{
+  border-radius: 30px;
+  margin-top: 50px;
+  width:100%;
+  height:350px;
+  object-fit:cover;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.tileStyle img{
+  width:100%;
+  height: 100%;
+  object-fit:cover;
+}
+.tileStyle .fadedbox {
+  background-color: #666666;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  opacity: 0;
+  width: 100%;
+  height: 100px;
+  padding: 80px 20px 175px 0px;
+  overflow-wrap: break-word;
+}
+.tileStyle .fadedbox p{
+   font-size: 18px;
+   padding-right:20px;
+   padding-left:20px;
+ }
+.tileStyle:hover .fadedbox {
+  opacity: 0.8;
+}
+.tileStyle .text {
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  transform: translateY(30px);
+  -webkit-transform: translateY(30px);
+}
+.tileStyle .title {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition-duration: 0.3s;
+}
+.tileStyle:hover .title, .tileStyle:focus .title {
+  opacity: 1;
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+}
+
+#scollingImage{
+  width:100%;
+  height:590px;
+}
