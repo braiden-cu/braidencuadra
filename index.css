@@ -108,7 +108,6 @@ a{
 .navigation {
   width: 100%;
   height: 5rem;
-  background-color: #3d3f45;
   font-weight: 400;
 }
 
@@ -118,7 +117,6 @@ a{
 }
 
 
-/* *** START: Nav-Logo *** */
 nav div.nav-logo img {
   height: 3rem;
   width: auto;
@@ -127,10 +125,7 @@ nav div.nav-logo img {
   transform: translateY(-50%);
   left:2rem;
 }
-/* *** END: Nav-Logo *** */
 
-
-/* *** START: Nav-Center *** */
 nav .nav-center {
   text-align: center;
   margin-left:auto;
@@ -141,18 +136,12 @@ nav .nav-center {
 nav .nav-center > ul{
     display: inline-block;
 }
-/* *** END: Nav-Center *** */
 
-
-/* *** START: Nav-End *** */
 div.nav-end {
   float:right;
   width:49%;
 }
-/* *** END: Nav-End *** */
 
-
-/* *** START: Nav-Items *** */
 div.nav-items ul {
   height: 100%;
   margin: 0;
@@ -165,24 +154,21 @@ div.nav-items ul li {
 }
 
 div.nav-items a {
+  color: #000;
   text-decoration: none;
   vertical-align: middle;
   line-height: 5rem;
 }
 
 div.nav-items a:link {
-  color:#fff;
+  color:#000;
 }
 
 div.nav-items a:visited {
-  color:#fff;
+  color:#000;
 }
 
 div.nav-items a:hover,
 div.nav-items a:active {
   color:#e5e5e5;
-}
-
-.active {
-  background-color: #a62c21;
 }
